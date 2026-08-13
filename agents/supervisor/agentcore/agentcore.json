@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schema.agentcore.aws.dev/v1/agentcore.json",
+  "name": "supervisor",
+  "version": 1,
+  "managedBy": "CDK",
+  "tags": {
+    "agentcore:created-by": "agentcore-cli",
+    "agentcore:project-name": "supervisor"
+  },
+  "runtimes": [
+    {
+      "name": "SupervisorAgent",
+      "build": "CodeZip",
+      "entrypoint": "main.py",
+      "codeLocation": "app/MyAgent/",
+      "runtimeVersion": "PYTHON_3_11",
+      "networkMode": "PUBLIC",
+      "protocol": "A2A",
+      "envVars": [
+        {
+          "name": "AGENTCORE_GATEWAY_URL",
+          "value": ""
+        },
+        {
+          "name": "COGNITO_TOKEN_URL",
+          "value": ""
+        },
+        {
+          "name": "COGNITO_CLIENT_ID",
+          "value": ""
+        },
+        {
+          "name": "COGNITO_CLIENT_SECRET_PARAMETER",
+          "value": ""
+        },
+        {
+          "name": "COGNITO_SCOPE",
+          "value": ""
+        },
+        {
+          "name": "BLOG_WRITER_RUNTIME_ARN",
+          "value": ""
+        },
+        {
+          "name": "SPEAKER_A_RUNTIME_ARN",
+          "value": ""
+        },
+        {
+          "name": "SPEAKER_B_RUNTIME_ARN",
+          "value": ""
+        },
+                {
+                    "name": "COLLABORATOR_RUNTIME_QUALIFIER",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_EXPORTER_OTLP_ENDPOINT",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_EXPORTER_OTLP_PROTOCOL",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_EXPORTER_OTLP_HEADERS",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_EXPORTER_OTLP_TRACES_HEADERS",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_TRACES_EXPORTER",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_LOGS_EXPORTER",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_METRICS_EXPORTER",
+                    "value": ""
+                },
+                {
+                    "name": "LANGFUSE_TRACING_ENVIRONMENT",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_SERVICE_NAME",
+                    "value": ""
+                },
+                {
+                    "name": "OTEL_SEMCONV_STABILITY_OPT_IN",
+                    "value": ""
+                }
+            ]
+        }
+  ],
+  "memories": [
+    {
+      "name": "SupervisorAgentMemory",
+      "eventExpiryDuration": 30,
+      "strategies": []
+    }
+  ],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "abTests": [],
+  "harnesses": [],
+  "datasets": [],
+  "payments": []
+}

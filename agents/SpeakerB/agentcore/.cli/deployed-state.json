@@ -1,0 +1,23 @@
+{
+  "targets": {
+    "dev": {
+      "resources": {
+        "runtimes": {
+          "SpeakerBAgent": {
+            "runtimeId": "SpeakerB_SpeakerBAgent-WvJHHW4vsP",
+            "runtimeArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:runtime/SpeakerB_SpeakerBAgent-WvJHHW4vsP",
+            "roleArn": "arn:aws:iam::232101830901:role/AgentCore-SpeakerB-dev-ApplicationAgentSpeakerBAgen-Ov7VVxpC9Mqv"
+          }
+        },
+        "memories": {
+          "SpeakerBMemory": {
+            "memoryId": "SpeakerB_SpeakerBMemory-jGU60g3MZS",
+            "memoryArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:memory/SpeakerB_SpeakerBMemory-jGU60g3MZS"
+          }
+        },
+        "stackName": "AgentCore-SpeakerB-dev",
+        "deployHash": "bf8cb4305123c8b0"
+      }
+    }
+  }
+}

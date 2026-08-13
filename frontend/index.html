@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Podcast Agents</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="toolbar" aria-label="Application toolbar">
+        <div>
+          <h1>Content Creators</h1>
+          <p>Multi agentic web application to create content</p>
+        </div>
+        <div class="toolbar-actions">
+          <span id="statusPill" class="status-pill idle">READY</span>
+          <button id="settingsToggle" class="icon-button" type="button" aria-expanded="false" aria-controls="settingsPanel" title="API settings">
+            <span aria-hidden="true">⚙</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="settingsPanel" class="settings is-hidden">
+        <label>
+          API base URL
+          <input id="apiBaseUrl" type="url" placeholder="https://abc123.execute-api.eu-north-1.amazonaws.com/prod" autocomplete="off" />
+        </label>
+        <div class="settings-grid">
+          <label>
+            Create job path
+            <input id="jobsPath" type="text" value="/jobs" autocomplete="off" />
+          </label>
+          <label>
+            Status path
+            <input id="statusPath" type="text" value="/status" autocomplete="off" />
+          </label>
+        </div>
+        <button id="saveSettings" class="secondary-button" type="button">Save settings</button>
+      </section>
+
+      <section class="chat-panel" aria-label="Chat">
+        <div id="chatMessages" class="chat-messages">
+          <article class="message assistant">
+            <div class="bubble">
+              <p>Hi, I am your assistant to create and forge your podcasts and blogs. Ask me anything you like.</p>
+            </div>
+          </article>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <textarea id="messageInput" rows="3" placeholder="Message the agent..." required></textarea>
+          <div class="actions">
+            <button id="sendButton" type="submit">Send</button>
+            <button id="stopPolling" class="secondary-button" type="button" disabled>Stop</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

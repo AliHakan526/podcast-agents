@@ -1,0 +1,23 @@
+{
+  "targets": {
+    "dev": {
+      "resources": {
+        "runtimes": {
+          "BlogWriterAgent": {
+            "runtimeId": "blogWriter_BlogWriterAgent-3wtJN2GXuv",
+            "runtimeArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:runtime/blogWriter_BlogWriterAgent-3wtJN2GXuv",
+            "roleArn": "arn:aws:iam::232101830901:role/AgentCore-blogWriter-dev-ApplicationAgentBlogWriter-xgBjzN80ggbw"
+          }
+        },
+        "memories": {
+          "BlogWriterMemory": {
+            "memoryId": "blogWriter_BlogWriterMemory-6e4YDe5Y0V",
+            "memoryArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:memory/blogWriter_BlogWriterMemory-6e4YDe5Y0V"
+          }
+        },
+        "stackName": "AgentCore-blogWriter-dev",
+        "deployHash": "9b38a5f848f3deae"
+      }
+    }
+  }
+}

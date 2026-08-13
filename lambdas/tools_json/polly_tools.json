@@ -1,0 +1,34 @@
+[
+  {
+    "name": "turnScriptToAudio",
+    "description": "Convert a podcast script into an MP3 file with Amazon Polly and return a presigned S3 URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "script_json": {
+          "type": "string",
+          "description": "A JSON array string of script lines. Each line should include speaker and text."
+        }
+      },
+      "required": ["script_json"]
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "audio_url": {
+          "type": "string",
+          "description": "A presigned URL for the generated MP3 file."
+        },
+        "s3_bucket": {
+          "type": "string",
+          "description": "The S3 bucket containing the generated MP3."
+        },
+        "s3_key": {
+          "type": "string",
+          "description": "The S3 key for the generated MP3."
+        }
+      },
+      "required": ["audio_url", "s3_bucket", "s3_key"]
+    }
+  }
+]

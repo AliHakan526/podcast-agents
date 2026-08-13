@@ -1,0 +1,23 @@
+{
+  "targets": {
+    "dev": {
+      "resources": {
+        "runtimes": {
+          "SupervisorAgent": {
+            "runtimeId": "supervisor_SupervisorAgent-HNW8SR9uM3",
+            "runtimeArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:runtime/supervisor_SupervisorAgent-HNW8SR9uM3",
+            "roleArn": "arn:aws:iam::232101830901:role/AgentCore-supervisor-dev-ApplicationAgentSupervisor-ybYHayuUGq2A"
+          }
+        },
+        "memories": {
+          "SupervisorAgentMemory": {
+            "memoryId": "supervisor_SupervisorAgentMemory-Oy7mvl38iq",
+            "memoryArn": "arn:aws:bedrock-agentcore:eu-north-1:232101830901:memory/supervisor_SupervisorAgentMemory-Oy7mvl38iq"
+          }
+        },
+        "stackName": "AgentCore-supervisor-dev",
+        "deployHash": "53feb67f87f37358"
+      }
+    }
+  }
+}

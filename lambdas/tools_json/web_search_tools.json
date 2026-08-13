@@ -1,0 +1,31 @@
+[
+  {
+    "name": "searchInWeb",
+    "description": "Search the public web for real-time information and return titles, URLs, snippets, and extracted page text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of search results to return.",
+          "default": 5
+        }
+      },
+      "required": ["query"]
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "description": "Formatted search results."
+        }
+      },
+      "required": ["result"]
+    }
+  }
+]

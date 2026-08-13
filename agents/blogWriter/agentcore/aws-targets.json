@@ -1,0 +1,8 @@
+[
+  {
+    "name": "dev",
+    "description": "Development deployment target for the blog writer AgentCore runtime.",
+    "account": "232101830901",
+    "region": "eu-north-1"
+  }
+]
